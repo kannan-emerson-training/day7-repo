@@ -6,6 +6,10 @@ namespace ManBoyInterfaceApp
     {
         static void Main(string[] args)
         {
+          //  IMannerable[] objects = new IMannerable[3];
+
+
+
             Man man = new Man();
             Boy boy = new Boy();
 
@@ -14,6 +18,12 @@ namespace ManBoyInterfaceApp
 
             //AtTheMovies(man);//type mismtach
             AtTheMovies(boy);
+
+            //IMannerable[] objects = new IMannerable[3];
+            //objects[0] = man;
+            //objects[1] = boy;
+            //objects[2] = man;
+            
 
         }
         static void AtTheMovies(IEmotionable obj) {

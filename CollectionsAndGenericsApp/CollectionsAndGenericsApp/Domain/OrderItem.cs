@@ -18,5 +18,16 @@ namespace CollectionsAndGenericsApp.Domain
         public double TotalCost() {
             return Quantity * UnitPrice;
         }
+
+        public override int GetHashCode()
+        {
+            return Id;
+        }
+
+        public override bool Equals(object second)
+        {
+            OrderItem other = second as OrderItem;
+            return (this.Id == other.Id && this.Name==other.Name);
+        }
     }
 }
