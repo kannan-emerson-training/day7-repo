@@ -11,6 +11,12 @@ namespace CollectionsAndGenericsApp
         {
             //CaseStudy1();
 
+            CaseStudy2();
+
+        }
+
+        private static void CaseStudy2()
+        {
             var orderBasket = new List<OrderItem>();
             orderBasket.Add(new OrderItem { Id = 1, Name = "books", Quantity = 3, UnitPrice = 100 });
             orderBasket.Add(new OrderItem { Id = 2, Name = "Amul Milk", Quantity = 2, UnitPrice = 65 });
@@ -19,13 +25,12 @@ namespace CollectionsAndGenericsApp
             double checkoutPrice = 0;
             foreach (OrderItem temp in orderBasket)
             {
-               
+
                 Console.WriteLine("id " + temp.Id + "name " + temp.Name + "unitprice" + temp.UnitPrice + "itemtotal" + temp.TotalCost());
 
             }
 
             Console.WriteLine("Checkout priceis " + checkoutPrice);
-
         }
 
         private static void CaseStudy1()
